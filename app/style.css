@@ -2,6 +2,7 @@
 :root {
   --white-color: #fff;
   --black-color: #000;
+  --grey-color: #dfdfdf;
   --blue-color: #5a77ff;
   --pink-color: #bc7198;
   --orange-color: #ffc593;
@@ -11,7 +12,13 @@
   padding: 0;
 }
 a {
+  font-size: 0.8rem;
+  letter-spacing: 0.125rem;
+  font-weight: 700;
   text-decoration: none;
+}
+a:not(.get--invite__btn):hover {
+  opacity: 0.5;
 }
 ul {
   list-style: none;
@@ -41,4 +48,20 @@ body {
   justify-content: space-between;
   flex-direction: row;
   padding: 1.5rem 0;
+}
+.header ul li a {
+  text-transform: uppercase;
+  color: var(--black-color);
+  transition: opacity 0.25s ease-in-out;
+}
+.get--invite__btn {
+  text-transform: uppercase;
+  background: var(--black-color);
+  color: var(--white-color);
+  padding: 0.625rem 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.get--invite__btn:hover {
+  background: var(--grey-color);
+  color: var(--black-color);
 }
