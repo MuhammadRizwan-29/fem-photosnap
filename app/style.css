@@ -1,0 +1,20 @@
+/* Variable */
+:root {
+    --white-color: #FFF;
+    --black-color:#000;
+  --blue-color: #5a77ff;
+  --pink-color: #bc7198;
+  --orange-color: #ffc593;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+.gradient-color {
+  background-image: linear-gradient(
+    var(--blue-color),
+    var(--pink-color),
+    var(--orange-color)
+  );
+}
