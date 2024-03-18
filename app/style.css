@@ -1,12 +1,28 @@
 /* Variable */
 :root {
-    --white-color: #FFF;
-    --black-color:#000;
+  --white-color: #fff;
+  --black-color: #000;
   --blue-color: #5a77ff;
   --pink-color: #bc7198;
   --orange-color: #ffc593;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 body {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
@@ -17,4 +33,12 @@ body {
     var(--pink-color),
     var(--orange-color)
   );
+}
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1.5rem 0;
 }
