@@ -132,15 +132,21 @@ body {
   color: var(--black-color);
 }
 /* Hero */
-.hero__container {
+:where(.hero__container, .stories, .design) {
   height: 600px;
   overflow: hidden;
 }
-.hero__container .typography__col {
-  background: var(--black-color);
-  flex: 1;
+:where(.hero__container, .stories, .design) .typography__col {
   height: 100%;
   padding: 0 5rem;
+}
+:where(.hero__container, .stories, .design) .image__col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__container .typography__col {
+  background: var(--black-color);
   position: relative;
 }
 .hero__container .typography__col::before {
@@ -159,29 +165,11 @@ body {
   flex: 2;
   width: 100%;
 }
-.hero__container .image__col img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 .hero__container :has(h1, p, a) {
   color: var(--white-color);
 }
 .hero__container p {
   margin-top: 1rem;
   opacity: 0.5;
-}
-/* Stories */
-.stories {
-  height: 600px;
-  overflow: hidden;
-}
-.stories .typography {
-  height: 100%;
-  padding: 0 5rem;
-}
-.stories img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
