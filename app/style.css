@@ -266,3 +266,18 @@ single--story img {
   height: 100%;
   object-fit: cover;
 }
+/* Benefits */
+.benefit {
+  gap: 2rem;
+  padding: 5rem 0;
+}
+.benefit .feature--img {
+  height: 5rem;
+  margin-bottom: 1.8rem;
+}
+.benefit .content h3 {
+  margin-bottom: 1.3rem;
+}
+.benefit .content p {
+  text-align: center;
+}
