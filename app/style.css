@@ -173,3 +173,72 @@ body {
   margin-top: 1rem;
   opacity: 0.5;
 }
+/* Stories card */
+.stories__card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.single--story {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.single--story::before {
+  content: "";
+  position: absolute;
+  min-width: 600px;
+  height: 100%;
+  background: linear-gradient(#0000, #000);
+}
+single--story img {
+  width: 100%;
+  height: 400px;
+}
+.story--content {
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  padding: 2.5rem;
+  width: calc(100% - 5rem);
+  margin-bottom: 1.5rem;
+}
+.story--content:has(h3, p, a) {
+  color: var(--white-color);
+}
+.divider--line {
+  position: relative;
+  overflow-y: auto;
+  height: 1px;
+  margin-top: 1rem;
+}
+.divider--line span::before {
+  content: "";
+  width: 300px;
+  height: 1px;
+  background: var(--white-color);
+  position: absolute;
+  top: 10px;
+}
+.story--content a {
+  color: var(--white-color);
+  position: relative;
+  bottom: -20px;
+  display: block;
+}
+.single--story a::before {
+  content: "";
+  width: 50px;
+  height: 20px;
+  background-image: url(./../src/icons/arrow-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+.single--story img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
