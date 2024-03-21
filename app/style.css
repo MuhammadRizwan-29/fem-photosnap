@@ -366,4 +366,11 @@ footer {
   .stories {
     flex-direction: column-reverse;
   }
+  .stories__card {
+    grid-template-columns: 1fr;
+  }
+  .benefit {
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
 }
