@@ -363,4 +363,7 @@ footer {
       var(--orange-color)
     );
   }
+  .stories {
+    flex-direction: column-reverse;
+  }
 }
