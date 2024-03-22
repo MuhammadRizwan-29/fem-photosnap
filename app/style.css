@@ -370,6 +370,14 @@ a {
 :where(.storis__hero) p {
   padding-top: 1rem;
 }
+.story--content span {
+  font-size: 0.8625rem;
+  opacity: 0.5;
+  line-height: 2;
+}
+.single--story p {
+  margin-top: 0.5rem;
+}
 /* Mobile */
 @media (max-width: 500px) {
   header ul {
