@@ -400,9 +400,13 @@ footer {
 }
 /* Tablet */
 @media ((min-width: 501px) and (max-width: 900px)) {
+  .header {
+    padding: 1.5rem 2rem;
+  }
   :where(.hero__container, .stories, .design) .image__col {
     display: flex;
     height: 100%;
+    flex: 1 !important;
   }
   .stories__card {
     grid-template-columns: repeat(2, 1fr);
@@ -416,5 +420,28 @@ footer {
   .footer {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .footer {
+    grid-template-rows: repeat(5, min-content);
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer--item {
+    grid-area: auto !important;
+    justify-self: center;
+  }
+  .footer--item:nth-child(3) {
+    padding-left: 0;
+  }
+  .footer--item ul {
+    align-items: center;
+    gap: 1.4rem;
+  }
+  .footer--item:nth-child(4) {
+    justify-self: center;
+    margin-left: 2rem;
+  }
+  .footer--item:nth-child(5) {
+    justify-self: center;
   }
 }
