@@ -391,8 +391,7 @@ section.cta__section {
 }
 .cta--container {
   gap: 10rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem 2rem;
 }
 .cta--container :where(.typography--col, .cta--btn__col) {
   flex: 1;
@@ -402,6 +401,13 @@ section.cta__section {
 }
 .cta--container :where(h2, a) {
   color: var(--white-color);
+}
+.cta--container .cta--btn__col a {
+  left: -5rem;
+}
+.features--container .benefit {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 /* Mobile */
 @media (max-width: 500px) {
