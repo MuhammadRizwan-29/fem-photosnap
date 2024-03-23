@@ -356,9 +356,7 @@ section.stories--banner {
   color: var(--white-color);
   line-height: 1.1;
 }
-:where(.storis__hero) span,
-p,
-a {
+.storis__hero :where(span, p, a) {
   color: var(--white-color);
   opacity: 0.5;
 }
@@ -377,6 +375,13 @@ a {
 }
 .single--story p {
   margin-top: 0.5rem;
+}
+.features--hero .hero__container .image__col {
+  display: flex;
+  height: 100%;
+}
+.features--container .benefit:first-child {
+  padding-bottom: 0;
 }
 /* Mobile */
 @media (max-width: 500px) {
