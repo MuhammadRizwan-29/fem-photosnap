@@ -98,6 +98,9 @@ h2 {
 .flex-jcs {
   justify-content: flex-start;
 }
+.flex-jcsb {
+  justify-content: space-between;
+}
 .flex-1 {
   flex: 1;
 }
@@ -409,6 +412,58 @@ section.cta__section {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+/* Pricing */
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 21rem;
+  margin: auto auto 4.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.plan .selected {
+  opacity: 1;
+}
+.plan--label {
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+.plan--change input:checked + .checkbox--circle:before {
+  background-color: #fff;
+  transform: translate(3.2rem);
+}
+.plan input[type="checkbox"] {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.plan--change {
+  width: 6rem;
+  height: 2.6rem;
+  display: inline-block;
+  position: relative;
+}
+.checkbox--circle {
+  cursor: pointer;
+  background-color: #dfdfdf;
+  border-radius: 50px;
+  transition: all 0.2s;
+  position: absolute;
+  inset: 0;
+}
+.checkbox--circle::before {
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  background-color: #000;
+  border-radius: 50%;
+  transition: all 0.2s;
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0.3rem;
+}
+
 /* Mobile */
 @media (max-width: 500px) {
   header ul {
