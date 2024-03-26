@@ -41,13 +41,73 @@
         </div>
       </section>
       <section>
-        <div class="plan flex flex-aic flex-jcsb">
-          <span class="plan--label selected">Monthly</span>
+        <!-- <div class="plan flex flex-aic flex-jcsb">
+          <span class="plan--label selected montly">Monthly</span>
           <label class="plan--change">
-            <input type="checkbox" name="" id="" />
+            <input type="checkbox" name="" id="toggle--btn" />
             <span class="checkbox--circle"></span>
           </label>
-          <span class="plan--label">Yearly</span>
+          <span class="plan--label yearly">Yearly</span>
+        </div> -->
+        <div class="pricing--plan__toggle">
+          <div class="plan">
+            <span class="plan--label monthly selected">Monthly</span>
+            <label class="plan--change">
+              <input type="checkbox" id="toggle--btn" />
+              <span class="slider round"></span>
+            </label>
+            <span class="plan--label annually">Annually</span>
+          </div>
+        </div>
+        <div class="container pricing--plans">
+          <div class="plan--container basic--plan">
+            <div class="typography--col">
+              <h2>Basic</h2>
+              <p>
+                Includes basic usage of our platform. Recommended for new and
+                aspiring photographers.
+              </p>
+            </div>
+            <div class="price--col">
+              <h1>$190.00</h1>
+              <p>per month</p>
+            </div>
+            <div class="pick--plan__col">
+              <a href="#">Pick Plan</a>
+            </div>
+          </div>
+          <div class="plan--container pro--plan">
+            <div class="typography--col">
+              <h2>Pro</h2>
+              <p>
+                More advanced features available. Recommended for photography
+                veterans and professionals.
+              </p>
+            </div>
+            <div class="price--col">
+              <h1>$390.00</h1>
+              <p>per month</p>
+            </div>
+            <div class="pick--plan__col">
+              <a href="#">Pick Plan</a>
+            </div>
+          </div>
+          <div class="plan--container business--plan">
+            <div class="typography--col">
+              <h2>Business</h2>
+              <p>
+                Additional features available such as more detailed metrics.
+                Recommended for business owners.
+              </p>
+            </div>
+            <div class="price--col">
+              <h1>$990.00</h1>
+              <p>per month</p>
+            </div>
+            <div class="pick--plan__col">
+              <a href="#">Pick Plan</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -413,7 +413,7 @@ section.cta__section {
   padding-right: 2rem;
 }
 /* Pricing */
-.plan {
+/* .plan {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -462,8 +462,104 @@ section.cta__section {
   position: absolute;
   bottom: 0.3rem;
   left: 0.3rem;
+} */
+.pricing--plan__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plan {
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Style the switch */
+.plan--change {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
+.plan--change input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Style the slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: grey; /* Default background color */
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: black; /* Default round color */
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: black; /* Background color when checked */
+}
+
+input:checked + .slider:before {
+  background-color: white; /* Round color when checked */
+  transform: translateX(
+    30px
+  ); /* Shift round circle to the right when checked */
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Pricing Plans */
+.pricing--plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 5rem 0;
+}
+.plan--container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.plan--container .typography--col,
+.plan--container .price--col {
+  text-align: center;
+}
+.basic--plan,
+.business--plan {
+  background: var(--grey-color);
+}
+.pro--plan {
+  background: var(--black-color);
+  height: calc(100% + 4rem);
+  margin-top: -4rem;
+}
 /* Mobile */
 @media (max-width: 500px) {
   header ul {
