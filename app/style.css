@@ -532,7 +532,11 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
+.plan .selected {
+  font-weight: 700;
+  color: var(--black-color);
+  opacity: 1;
+}
 /* Pricing Plans */
 .pricing--plans {
   display: grid;
