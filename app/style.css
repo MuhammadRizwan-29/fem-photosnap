@@ -545,7 +545,7 @@ input:checked + .slider:before {
   padding: 5rem 0;
 }
 .plan--container {
-  padding: 2rem;
+  padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -561,8 +561,9 @@ input:checked + .slider:before {
 }
 .pro--plan {
   background: var(--black-color);
-  height: calc(100% + 4rem);
-  margin-top: -4rem;
+  margin-top: -2rem;
+  padding: 4rem 3rem;
+  margin-bottom: -2rem;
 }
 .plan--container h2 {
   text-transform: capitalize;
@@ -593,6 +594,45 @@ input:checked + .slider:before {
   background: var(--grey-color);
   color: var(--black-color);
 }
+/* Compare Table */
+.compare {
+  padding: 8rem 0;
+}
+.compare h2 {
+  text-align: center;
+}
+table:not(.for-mobile) {
+  max-width: 50rem;
+}
+table {
+  letter-spacing: 0.125rem;
+  width: 90%;
+  border-collapse: collapse;
+  text-align: left;
+  margin: auto;
+  font-size: 1.2rem;
+}
+table:not(.for-mobile) td:first-child,
+table:not(.for-mobile) th:first-child {
+  width: 40%;
+}
+table :where(th, tr) {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+table:not(.for-mobile) td:not(:first-child),
+table:not(.for-mobile) th:not(:first-child) {
+  text-align: center;
+  width: 20%;
+}
+table:not(.for-mobile) tr:not(:first-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+table:not(.for-mobile) tr {
+  height: 4rem;
+  border-bottom: 1px solid #000;
+}
+
 /* Mobile */
 @media (max-width: 500px) {
   header ul {
