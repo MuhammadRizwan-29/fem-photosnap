@@ -19,11 +19,11 @@ toggleButton.addEventListener("change", () => {
     monthlyLabel.classList.remove("selected");
     annuallyLabel.classList.add("selected");
     // Update prices or values for annually here
-    priceSet(190.0, 390.0, 990.0, "month");
+    priceSet(390.0, 890.0, 1290.0, "year");
   } else {
     annuallyLabel.classList.remove("selected");
     monthlyLabel.classList.add("selected");
     // Update prices or values for monthly here
-    priceSet(390.0, 890.0, 1290.0, "year");
+    priceSet(190.0, 390.0, 990.0, "month");
   }
 });
