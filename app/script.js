@@ -11,7 +11,9 @@ const priceSet = function (basic, pro, business, tag) {
   basicPlan.innerHTML = `${basic}.00`;
   proPlan.innerHTML = `${pro}.00`;
   businessPlan.innerHTML = `${business}.00`;
-  priceTag.textContent = `per ${tag}`;
+  priceTag.forEach((tagEl) => {
+    tagEl.innerHTML = `per ${tag}`;
+  });
 };
 
 toggleButton.addEventListener("change", () => {
