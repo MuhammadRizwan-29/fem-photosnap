@@ -643,6 +643,9 @@ table:not(.for-mobile) tr {
   .compare {
     padding-top: 4rem;
   }
+  .pricing--plan__sec .cta--btn__col a {
+    left: 0;
+  }
   /* Footer */
   .footer {
     grid-template-rows: repeat(5, min-content);
