@@ -413,56 +413,9 @@ section.cta__section {
   padding-right: 2rem;
 }
 /* Pricing */
-/* .plan {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 21rem;
-  margin: auto auto 4.8rem;
-  font-size: 1.8rem;
-  font-weight: 700;
+.pricing--plan__toggle {
+  padding-top: 2rem;
 }
-.plan .selected {
-  opacity: 1;
-}
-.plan--label {
-  opacity: 0.5;
-  transition: all 0.2s;
-}
-.plan--change input:checked + .checkbox--circle:before {
-  background-color: #fff;
-  transform: translate(3.2rem);
-}
-.plan input[type="checkbox"] {
-  opacity: 0;
-  height: 0;
-  width: 0;
-}
-.plan--change {
-  width: 6rem;
-  height: 2.6rem;
-  display: inline-block;
-  position: relative;
-}
-.checkbox--circle {
-  cursor: pointer;
-  background-color: #dfdfdf;
-  border-radius: 50px;
-  transition: all 0.2s;
-  position: absolute;
-  inset: 0;
-}
-.checkbox--circle::before {
-  content: "";
-  height: 2rem;
-  width: 2rem;
-  background-color: #000;
-  border-radius: 50%;
-  transition: all 0.2s;
-  position: absolute;
-  bottom: 0.3rem;
-  left: 0.3rem;
-} */
 .pricing--plan__toggle {
   display: flex;
   align-items: center;
@@ -496,7 +449,7 @@ section.cta__section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: grey; /* Default background color */
+  background-color: var(--grey-color); /* Default background color */
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -672,6 +625,23 @@ table:not(.for-mobile) tr {
   .benefit {
     flex-direction: column;
     padding: 3rem 2rem;
+  }
+  .pricing--plan__toggle {
+    padding-top: 2rem;
+  }
+  .pricing--plans {
+    padding: 3rem 1rem;
+  }
+  .pricing--plans {
+    grid-template-columns: auto;
+    gap: 1.5rem;
+  }
+  .pro--plan {
+    padding: 2rem 3rem;
+    margin: 0;
+  }
+  .compare {
+    padding-top: 4rem;
   }
   /* Footer */
   .footer {

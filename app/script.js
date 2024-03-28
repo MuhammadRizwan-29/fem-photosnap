@@ -8,9 +8,9 @@ const businessPlan = document.querySelector(".business--plan .price--col h1");
 const priceTag = document.querySelectorAll(".plan--container .price--col p");
 
 const priceSet = function (basic, pro, business, tag) {
-  basicPlan.innerHTML = `${basic}.00`;
-  proPlan.innerHTML = `${pro}.00`;
-  businessPlan.innerHTML = `${business}.00`;
+  basicPlan.innerHTML = `$${basic}.00`;
+  proPlan.innerHTML = `$${pro}.00`;
+  businessPlan.innerHTML = `$${business}.00`;
   priceTag.forEach((tagEl) => {
     tagEl.innerHTML = `per ${tag}`;
   });
